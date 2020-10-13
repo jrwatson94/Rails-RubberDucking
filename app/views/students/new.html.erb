@@ -1,0 +1,11 @@
+<h1>New Student</h1>
+
+<%= form_for @student do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+
+    <%= f.label :mod %>
+    <%= f.select :mod, options_for_select(1..5) %><br> 
+
+    <%= f.submit %>
+<% end %>
